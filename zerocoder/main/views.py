@@ -11,9 +11,9 @@ def new(request):
     return render(request, 'main/new.html')
 
 
-def data(request):
-    return HttpResponse("<h1>Data text.</h1>")
+def feeding(request):
+    return render(request, 'main/feeding.html')
 
 
-def test(request):
-    return HttpResponse("<h1>Test text.</h1>")
+def play(request):
+    return render(request, 'main/play.html')

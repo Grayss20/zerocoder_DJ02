@@ -20,14 +20,8 @@
                     <img src="{% static 'main/img/img.png' %}" alt="ferrets" class="img-fluid rounded-circle" width="150">
                     <h5 class="mt-2">Ferrets Django</h5>
                 </div>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="{% url 'home' %}">Главная</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'page2' %}">Второстепенная</a>
-                    </li>
-                </ul>
+                {% include 'main/nav.html' %}
+
             </aside>
 
             <main class="col-md-9 col-lg-10 p-4">
@@ -36,6 +30,8 @@
             </main>
         </div>
     </div>
+
+    {% include 'main/footer.html' %}
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
